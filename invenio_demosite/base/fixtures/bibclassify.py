@@ -36,14 +36,3 @@ class ClsMETHODData(DataSet):
         description = u'NASA Subjects'
         name = u'NASA-subjects'
         location = u'http://invenio-software.org/download/invenio-demo-site-files/NASA-subjects.rdf'
-
-
-class CollectionClsMETHODData(DataSet):
-
-    class CollectionClsMETHOD_12_2:
-        id_clsMETHOD = ClsMETHODData.ClsMETHOD_2.ref('id')
-        id_collection = CollectionData.experimentalPhysics.ref('id')
-
-    class CollectionClsMETHOD_2_1:
-        id_clsMETHOD = ClsMETHODData.ClsMETHOD_1.ref('id')
-        id_collection = CollectionData.preprints.ref('id')
